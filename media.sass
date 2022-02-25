@@ -1,32 +1,55 @@
 /*Media Query For Mobile Devices*//import css-variables from @
 
-@media (max-width: 380px)
+@media (max-width: 300px)
     color: red !important
-#products
-    margin: 0
-    justify-content: center
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    justify-content: center
-    
 
-
-@media (min-width: 380px) and (max-width: 480px)
+#index
+    display: none
 
 #shop-car
-    position: absolute
-    z-index: 1000
-    width: 100%
-    right: 0
-    height: calc(100% - 3.5rem)
-    visibility: hidden
-    margin: 0
+    display: none
 
-@media (max: 1280) 
+/*#products
+ margin: 0
+ justify-content: center
+ -webkit-box-pack: center
+ -ms-flex-pack: center
+ justify-content: center
+    /*
+/*SCREEN BETWEEN 500PX AND 380PX*/
 
-footer
+@media (min-width: 300px) and (max-width: 500px)
+
+   #index
+    display: flex
+
+   #shop-car
+    display: none
+
+    /*#shop-carposition: absolutez-index: 1000width: 100%right: 0height: calc(100% - 3.5rem)visibility: hiddenmargin: 0*/
+
+/*SCREEN BETWEEN 500PX AND 700PX*/
+
+@media (min-width: 500px) and (max-width: 700px)
+    #index
+        display: flex
+    #shop-car
+        position: absolute
+        z-index: 1000
+        display: flex
+        //flex: 1
+        width: 100%
+        height: calc(100% -3.5rem)
 
 
+        //#button-shop: active #shop-car
+           // display: none
 
+ /*SCREEN BETWEEN 700PX AND 700PX*/
+@media (min-width: 700px) and (max-width: 1280px)
+    #shop-car
+        flex: 1
+
+    
 
 
